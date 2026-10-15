@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>高中生物 全系列互動教學網站｜翰林版 108課綱 必修與選修生物全冊總入口</title>
+  <meta name="description" content="翰林版高中生物全系列互動教學網頁總入口。匯聚高一必修生物、選修生物（Ⅰ）至（Ⅳ）全套五冊教材，內建課本288dpi超清圖解、互動標籤練習、原題詳解與雲端教學影片，打造最高質感的生命科學數位學習門戶。">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="img/hanlin-logo.png">
+
+  <!-- 引入 Google Fonts 頂級繁體中文字體 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 頂部吸頂導航列 -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-brand">
+        <img class="nav-logo" src="img/hanlin-logo.png" alt="翰林出版" width="38" height="38">
+        <div class="nav-brand-title">
+          <strong>高中生物 互動教學網頁</strong>
+          <span>翰林版 108課綱 · 麗山高中生物科自編</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#books" class="nav-link">五冊教材</a></li>
+          <li><a href="#search" class="nav-link">主題檢索</a></li>
+          <li><a href="#pathway" class="nav-link">學習路徑</a></li>
+          <li><a href="#features" class="nav-link">教材特色</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="切換深色/淺色主題" title="切換主題模式">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a5.389 5.389 0 0 1-4.4 2.26 5.403 5.403 0 0 1-3.14-9.8c-.44-.06-.9-.1-1.36-.1z"/></svg>
+        </button>
+        <button id="bookmarkBtn" class="btn-bookmark" title="將總入口加入書籤">
+          <svg class="ic" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+          <span>加入書籤</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主視覺 HERO 封面區塊 -->
+  <section class="hero">
+    <div class="hero-bg-shapes">
+      <div class="hero-blob blob-1"></div>
+      <div class="hero-blob blob-2"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="badge-pill">
+        <span class="dot"></span>
+        <span>108 課綱 · 臺灣高中生物學數位典藏總覽門戶</span>
+      </div>
+
+      <div class="hero-publisher">
+        <img src="img/hanlin-logo-wide.png" alt="翰林出版 HAN LIN PUBLISHING" width="1240" height="324">
+      </div>
+
+      <div class="hero-curriculum">
+        <span class="line"></span>
+        <em>自然科學領域 · 必修與加深加廣選修全系列</em>
+        <span class="line"></span>
+      </div>
+
+      <h1 class="hero-title">
+        高中生物教學網頁
+        <span>全系列互動教材總入口</span>
+      </h1>
+
+      <p class="hero-desc">
+        專為高中師生打造的一站式生命科學互動學習平台。完整收錄高一必修生物至選修生物四全五冊教材，不用再分開記錄五個網址，點選即可直達秒開互動網頁、288dpi 高清課本圖解、微觀探究練習與雲端教學影片！
+      </p>
+
+      <!-- 全冊整體規模看板 -->
+      <div class="stats-board">
+        <div class="stat-item">
+          <div class="stat-num">5<em>冊</em></div>
+          <div class="stat-label">教科書全系列</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">22<em>章</em></div>
+          <div class="stat-label">核心知識主題</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">70<em>節</em></div>
+          <div class="stat-label">互動教學正課</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">29<em>個</em></div>
+          <div class="stat-label">探討活動與實驗</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100<em>%</em></div>
+          <div class="stat-label">WebP 秒開極速體驗</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 全景關鍵字檢索區 -->
+  <section class="search-section" id="search">
+    <div class="container">
+      <div class="search-box-wrapper">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" class="search-input" placeholder="在全高中五冊教材中搜尋知識點（例如：光合作用、DNA、神經、天擇、生源論、PCR、細胞膜...）" autocomplete="off">
+        <button id="searchClear" class="search-clear" style="display:none;">清除</button>
+      </div>
+
+      <!-- 熱門搜尋標籤 -->
+      <div class="search-tags">
+        <span class="search-tag-label">熱門單元直達：</span>
+        <button class="tag-btn" data-tag="細胞學說">#細胞學說</button>
+        <button class="tag-btn" data-tag="光合作用">#光合作用</button>
+        <button class="tag-btn" data-tag="DNA複製">#DNA複製</button>
+        <button class="tag-btn" data-tag="生源論">#生源論戰</button>
+        <button class="tag-btn" data-tag="植物組織">#植物組織與器官</button>
+        <button class="tag-btn" data-tag="心臟">#循環心動週期</button>
+        <button class="tag-btn" data-tag="神經元">#動作電位與突觸</button>
+        <button class="tag-btn" data-tag="免疫系統">#特異性免疫</button>
+        <button class="tag-btn" data-tag="演化">#族群遺傳與天擇</button>
+        <button class="tag-btn" data-tag="生物多樣性">#臺灣生物多樣性</button>
+      </div>
+
+      <!-- 即時搜尋結果展開面板 -->
+      <div id="searchResults" class="search-results" style="display:none;">
+        <div class="search-results-head">
+          <span id="resultsCount">搜尋結果</span>
+          <span style="font-size:12px; color:var(--text-subtle);">點選卡片即可在新分頁直達該教學網頁</span>
+        </div>
+        <div id="resultsGrid" class="results-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 五大冊教材大卡片展示區 -->
+  <section class="container" id="books">
+    <div class="section-title">
+      <span class="section-eyebrow">FIVE COMPREHENSIVE VOLUMES</span>
+      <h2>高中生物五大冊教材 互動網站直達</h2>
+      <p>每一冊皆具備獨立的完整章節導航、課本概念圖解、微觀互動題目與 Google 雲端硬碟高清教學影片</p>
+    </div>
+
+    <div class="books-container">
+
+      <!-- 冊別 1：高一 必修生物（全） -->
+      <article class="book-card req">
+        <div class="book-cover-col">
+          <span class="book-badge-pos">高一奠基 · 全體必修</span>
+          <div class="book-cover-frame">
+            <img class="book-cover-img" src="img/book-req.jpg" alt="高一必修生物 封面" loading="lazy">
+          </div>
+        </div>
+        <div class="book-info-col">
+          <div class="book-header">
+            <div class="book-meta-top">
+              <span class="book-target-pill">學測自然科必考範圍</span>
+              <span style="font-size:13px; color:var(--text-subtle);">全冊共 3 大章 · 10 節正課 · 6 個探討活動</span>
+            </div>
+            <h3 class="book-title">高一 必修生物（全）</h3>
+            <div class="book-subtitle">Required Biology · 生命科學的基石</div>
+          </div>
+          <p class="book-summary">
+            從微觀細胞學說、顯微測量技術到細胞內能量轉換；深入孟德爾遺傳法則與 DNA 雙螺旋密碼；最後拓展至達爾文天擇說與三域系統生命大樹，引領高一學子建立嚴謹完整的生物科學素養。
+          </p>
+          <div class="book-chapters-preview">
+            <div class="chapters-preview-label">
+              <span>📖 收錄章節單元：</span>
+            </div>
+            <div class="chapter-chips">
+              <span class="chapter-chip"><span class="ch-num">1</span> 細胞的構造與功能</span>
+              <span class="chapter-chip"><span class="ch-num">2</span> 生殖與遺傳</span>
+              <span class="chapter-chip"><span class="ch-num">3</span> 演化與多樣性</span>
+              <span class="chapter-chip"><span class="ch-num">🔬</span> 探討活動（1-1~1-3、2-1、3-1~3-2）</span>
+            </div>
+          </div>
+          <div class="book-footer">
+            <div class="book-stats-mini">
+              <span class="stat-mini-pill"><b>10</b> 節正課</span>
+              <span class="stat-mini-pill"><b>6</b> 實驗活動</span>
+            </div>
+            <a class="btn-open-book" href="https://froglssh.github.io/hanlin-required-biology-v2-web/" target="_blank" rel="noopener">
+              <span>進入高一必修生物網站</span>
+              <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 冊別 2：選修生物（Ⅰ） -->
+      <article class="book-card bio1">
+        <div class="book-cover-col">
+          <span class="book-badge-pos">高二加深加廣 · 細胞與遺傳</span>
+          <div class="book-cover-frame">
+            <img class="book-cover-img" src="img/book-bio1.jpg" alt="選修生物（Ⅰ） 封面" loading="lazy">
+          </div>
+        </div>
+        <div class="book-info-col">
+          <div class="book-header">
+            <div class="book-meta-top">
+              <span class="book-target-pill">分科測驗重點 · 生命科學院基石</span>
+              <span style="font-size:13px; color:var(--text-subtle);">全冊共 5 大章 · 17 節正課 · 5 個探討活動</span>
+            </div>
+            <h3 class="book-title">選修生物（Ⅰ）細胞與遺傳</h3>
+            <div class="book-subtitle">Elective Biology I · Cellular Biology &amp; Genetics</div>
+          </div>
+          <p class="book-summary">
+            深入探究生物大分子結構與生物膜流體鑲嵌模型；剖析有氧呼吸（糖解、檸檬酸循環、電子傳遞鏈）能量生成；解密遺傳物質確認歷程、DNA 半保留複製、轉錄轉譯中心法則與當代 PCR、基因重組技術。
+          </p>
+          <div class="book-chapters-preview">
+            <div class="chapters-preview-label">
+              <span>📖 收錄章節單元：</span>
+            </div>
+            <div class="chapter-chips">
+              <span class="chapter-chip"><span class="ch-num">1</span> 細胞的分子組成</span>
+              <span class="chapter-chip"><span class="ch-num">2</span> 細胞的代謝與能量</span>
+              <span class="chapter-chip"><span class="ch-num">3</span> 遺傳物質的探索</span>
+              <span class="chapter-chip"><span class="ch-num">4</span> 遺傳訊息的表現</span>
+              <span class="chapter-chip"><span class="ch-num">5</span> 生物技術</span>
+            </div>
+          </div>
+          <div class="book-footer">
+            <div class="book-stats-mini">
+              <span class="stat-mini-pill"><b>17</b> 節正課</span>
+              <span class="stat-mini-pill"><b>5</b> 實驗活動</span>
+            </div>
+            <a class="btn-open-book" href="https://froglssh.github.io/hanlin-elective-biology-1-web/選修生物1教材網站/" target="_blank" rel="noopener">
+              <span>進入選修生物（Ⅰ）網站</span>
+              <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 冊別 3：選修生物（Ⅱ）new -->
+      <article class="book-card bio2">
+        <div class="book-cover-col">
+          <span class="book-badge-pos">高二加深加廣 · 植物生理大典</span>
+          <div class="book-cover-frame">
+            <img class="book-cover-img" src="img/book-bio2.jpg" alt="選修生物（Ⅱ） 封面" loading="lazy">
+          </div>
+        </div>
+        <div class="book-info-col">
+          <div class="book-header">
+            <div class="book-meta-top">
+              <span class="book-target-pill">最新秒開優化版 · 288dpi高解像</span>
+              <span style="font-size:13px; color:var(--text-subtle);">全冊共 5 大章 · 14 節正課 · 6 個探討活動</span>
+            </div>
+            <h3 class="book-title">選修生物（Ⅱ）植物體的構造與功能</h3>
+            <div class="book-subtitle">Elective Biology II · Plant Structure &amp; Physiology</div>
+          </div>
+          <p class="book-summary">
+            從生源論戰法庭到米勒-尤里化學演化；解構植物細胞壁特化與根、莖、葉營養器官微觀橫切面；詳解蒸散拉力水份運輸與葉綠體光反應、卡爾文循環；深入被子植物雙重受精、種子發育與植物激素向光調節。
+          </p>
+          <div class="book-chapters-preview">
+            <div class="chapters-preview-label">
+              <span>📖 收錄章節單元：</span>
+            </div>
+            <div class="chapter-chips">
+              <span class="chapter-chip"><span class="ch-num">1</span> 生物的起源與演化</span>
+              <span class="chapter-chip"><span class="ch-num">2</span> 植物體的構造與組成</span>
+              <span class="chapter-chip"><span class="ch-num">3</span> 物質吸收、合成與運輸</span>
+              <span class="chapter-chip"><span class="ch-num">4</span> 植物的生殖與萌發</span>
+              <span class="chapter-chip"><span class="ch-num">5</span> 植物生長發育與激素</span>
+            </div>
+          </div>
+          <div class="book-footer">
+            <div class="book-stats-mini">
+              <span class="stat-mini-pill"><b>14</b> 節正課</span>
+              <span class="stat-mini-pill"><b>6</b> 實驗活動</span>
+            </div>
+            <a class="btn-open-book" href="https://froglssh.github.io/hanlin-elective-biology-2-web/選生二網頁＿new/" target="_blank" rel="noopener">
+              <span>進入選修生物（Ⅱ）new 網站</span>
+              <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 冊別 4：選修生物（Ⅲ） -->
+      <article class="book-card bio3">
+        <div class="book-cover-col">
+          <span class="book-badge-pos">高三加深加廣 · 動物與人體生理</span>
+          <div class="book-cover-frame">
+            <img class="book-cover-img" src="img/book-bio3.jpg" alt="選修生物（Ⅲ） 封面" loading="lazy">
+          </div>
+        </div>
+        <div class="book-info-col">
+          <div class="book-header">
+            <div class="book-meta-top">
+              <span class="book-target-pill">醫藥三類組必讀 · 生理恆定核心</span>
+              <span style="font-size:13px; color:var(--text-subtle);">全冊共 6 大章 · 18 節正課 · 8 個探討活動</span>
+            </div>
+            <h3 class="book-title">選修生物（Ⅲ）動物體的構造與功能</h3>
+            <div class="book-subtitle">Elective Biology III · Animal Physiology &amp; Homeostasis</div>
+          </div>
+          <p class="book-summary">
+            宏觀與微觀交織的人體生理學殿堂。涵蓋四大組織與負回饋調節；心臟搏動、微血管物質交換與消化管吸收；呼吸氣體解離與腎元泌尿過濾；神經元動作電位傳導、內分泌反饋；人體特異性免疫防線與配子受精胚胎發育。
+          </p>
+          <div class="book-chapters-preview">
+            <div class="chapters-preview-label">
+              <span>📖 收錄章節單元：</span>
+            </div>
+            <div class="chapter-chips">
+              <span class="chapter-chip"><span class="ch-num">1</span> 動物體組成與恆定</span>
+              <span class="chapter-chip"><span class="ch-num">2</span> 循環與消化系統</span>
+              <span class="chapter-chip"><span class="ch-num">3</span> 呼吸與排泄系統</span>
+              <span class="chapter-chip"><span class="ch-num">4</span> 感應（神經/內分泌/肌骨）</span>
+              <span class="chapter-chip"><span class="ch-num">5</span> 免疫防禦作戰</span>
+              <span class="chapter-chip"><span class="ch-num">6</span> 配子形成與生殖</span>
+            </div>
+          </div>
+          <div class="book-footer">
+            <div class="book-stats-mini">
+              <span class="stat-mini-pill"><b>18</b> 節正課</span>
+              <span class="stat-mini-pill"><b>8</b> 實驗活動</span>
+            </div>
+            <a class="btn-open-book" href="https://froglssh.github.io/hanlin-elective-biology-3-web/選生三新網頁/" target="_blank" rel="noopener">
+              <span>進入選修生物（Ⅲ）網站</span>
+              <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 冊別 5：選修生物（Ⅳ） -->
+      <article class="book-card bio4">
+        <div class="book-cover-col">
+          <span class="book-badge-pos">高三加深加廣 · 生態演化與保育</span>
+          <div class="book-cover-frame">
+            <img class="book-cover-img" src="img/book-bio4.jpg" alt="選修生物（Ⅳ） 封面" loading="lazy">
+          </div>
+        </div>
+        <div class="book-info-col">
+          <div class="book-header">
+            <div class="book-meta-top">
+              <span class="book-target-pill">宏觀大自然 · 生態系與生物圈</span>
+              <span style="font-size:13px; color:var(--text-subtle);">全冊共 3 大章 · 11 節正課 · 4 個探討活動</span>
+            </div>
+            <h3 class="book-title">選修生物（Ⅳ）生態、演化與生物多樣性</h3>
+            <div class="book-subtitle">Elective Biology IV · Ecology, Evolution &amp; Biodiversity</div>
+          </div>
+          <p class="book-summary">
+            從微觀基因頻率到宏觀生態圈。詳解哈溫定律數學模型、族群瓶頸與隔離物種形成；探討族群成長曲線、群集消長與食物網能量 10% 定律；剖析遺傳/物種/生態系多樣性、臺灣獨特垂直生態系與瀕危物種保育科學。
+          </p>
+          <div class="book-chapters-preview">
+            <div class="chapters-preview-label">
+              <span>📖 收錄章節單元：</span>
+            </div>
+            <div class="chapter-chips">
+              <span class="chapter-chip"><span class="ch-num">1</span> 演化與物種形成</span>
+              <span class="chapter-chip"><span class="ch-num">2</span> 生物與環境（族群/群集/生態系）</span>
+              <span class="chapter-chip"><span class="ch-num">3</span> 生物多樣性與臺灣生態</span>
+              <span class="chapter-chip"><span class="ch-num">🔬</span> 探討活動（1-1、2-1~2-2、3-1）</span>
+            </div>
+          </div>
+          <div class="book-footer">
+            <div class="book-stats-mini">
+              <span class="stat-mini-pill"><b>11</b> 節正課</span>
+              <span class="stat-mini-pill"><b>4</b> 實驗活動</span>
+            </div>
+            <a class="btn-open-book" href="https://froglssh.github.io/hanlin-elective-biology-4-web/選生四網頁/" target="_blank" rel="noopener">
+              <span>進入選修生物（Ⅳ）網站</span>
+              <svg class="ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- 學習路徑與升學地圖區 -->
+  <section class="pathway-section" id="pathway">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-eyebrow">ROADMAP FOR HIGH SCHOOL BIOLOGY</span>
+        <h2>高中三年生命科學 學習與升學路徑</h2>
+        <p>清晰掌握學測與分科測驗對應範圍，循序漸進架構紮實的生物認知地圖</p>
+      </div>
+
+      <div class="timeline">
+        <!-- 階段一 -->
+        <div class="timeline-step">
+          <span class="step-grade">高一階段 · 全民通識</span>
+          <h3>生命科學基石建立</h3>
+          <p>適合高一全體學生。聚焦細胞基本單位、遺傳法則與演化多樣性，為學測自然科生物試題的主要出題來源。</p>
+          <div class="step-books">
+            <a class="step-book-link" href="https://froglssh.github.io/hanlin-required-biology-v2-web/" target="_blank" rel="noopener">
+              <span>🌿 必修生物（全）</span>
+              <span style="color:var(--c-req);">開啟 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 階段二 -->
+        <div class="timeline-step">
+          <span class="step-grade">高二階段 · 微觀與植物</span>
+          <h3>生化細胞與植物生理</h3>
+          <p>自然科學班群加深加廣首部曲。由微觀生化與遺傳調控出發，接續植物組織、水分養分傳輸與生長發育適應。</p>
+          <div class="step-books">
+            <a class="step-book-link" href="https://froglssh.github.io/hanlin-elective-biology-1-web/選修生物1教材網站/" target="_blank" rel="noopener">
+              <span>🧬 選修生物（Ⅰ）細胞與遺傳</span>
+              <span style="color:var(--c-b1);">開啟 →</span>
+            </a>
+            <a class="step-book-link" href="https://froglssh.github.io/hanlin-elective-biology-2-web/選生二網頁＿new/" target="_blank" rel="noopener">
+              <span>🍃 選修生物（Ⅱ）植物構造功能</span>
+              <span style="color:var(--c-b2);">開啟 →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 階段三 -->
+        <div class="timeline-step">
+          <span class="step-grade">高三階段 · 生理與生態</span>
+          <h3>人體生理與宏觀生態</h3>
+          <p>三類組醫藥衛生與生物理工核心領域。涵蓋全套人體生理恆定大典，以及宏觀生態系、演化機制與多樣性保育。</p>
+          <div class="step-books">
+            <a class="step-book-link" href="https://froglssh.github.io/hanlin-elective-biology-3-web/選生三新網頁/" target="_blank" rel="noopener">
+              <span>🫀 選修生物（Ⅲ）動物生理功能</span>
+              <span style="color:var(--c-b3);">開啟 →</span>
+            </a>
+            <a class="step-book-link" href="https://froglssh.github.io/hanlin-elective-biology-4-web/選生四網頁/" target="_blank" rel="noopener">
+              <span>🌍 選修生物（Ⅳ）生態演化多樣性</span>
+              <span style="color:var(--c-b4);">開啟 →</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 數位教學特色亮點區 -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-title">
+        <span class="section-eyebrow">DIGITAL LEARNING ADVANTAGES</span>
+        <h2>為什麼選擇這套互動教材？</h2>
+        <p>突破傳統紙本限制，兼顧課堂多媒體教學與課後自主探究</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-box">
+          <div class="feature-icon-box">⚡</div>
+          <h4>WebP 秒開優化</h4>
+          <p>圖片全面抽離並轉換為現代高效 WebP 靜態圖檔，HTML 極限瘦身 99%，在手機或弱網環境也能毫秒瞬間載入。</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon-box">🔍</div>
+          <h4>288dpi 超清圖解</h4>
+          <p>原汁原味課本微觀構造圖解，支援全螢幕燈箱放大檢視，細緻辨識細胞壁孔、心臟瓣膜與腎小球血管網。</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon-box">🧩</div>
+          <h4>互動闖關探究</h4>
+          <p>拖曳貼標籤、時序排序與即時觀念診斷，擺脫死背，在操作過程中加深對器官構造與生化步驟的理解。</p>
+        </div>
+        <div class="feature-box">
+          <div class="feature-icon-box">🎬</div>
+          <h4>雲端影音直達</h4>
+          <p>每一單元均配備由名師錄製的 Google 雲端硬碟高清教學影片，提供生動動畫詳解與課堂同步複習。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 頁尾 -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img class="footer-logo" src="img/hanlin-logo-wide.png" alt="翰林出版" width="200">
+      <p class="footer-text">
+        教材內容整理自翰林版高中《必修生物》、《選修生物Ⅰ～Ⅳ》教科書，圖片取自課本僅供學校課堂與自主學習使用。<br>
+        各冊互動教學網頁由臺北市立麗山高中生物科自編製作，全面發布於 GitHub Pages 雲端託管。<br>
+        建議學生將本總入口網址加入瀏覽器書籤，一站串接五冊所有互動教材與影音資源！
+      </p>
+      <div class="footer-copy">
+        © 108課綱 翰林版高中生物 全系列互動教學網站 · 麗山高中生物科製作
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
